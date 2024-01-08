@@ -1,0 +1,33 @@
+Started GET "/" for ::1 at 2024-01-07 21:06:10 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/aqua-azabache/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/aqua-azabache/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 96.4ms | Allocations: 633)
+Completed 200 OK in 572ms (Views: 179.3ms | ActiveRecord: 0.0ms | Allocations: 7354)
+
+
+Started GET "/index" for ::1 at 2024-01-07 21:33:08 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+Started GET "/articles/index" for ::1 at 2024-01-07 21:33:21 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/articles/index"):
+  
+Started GET "/articles" for ::1 at 2024-01-07 21:33:51 -0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 111)
+  Rendered layout layouts/application.html.erb (Duration: 1983.2ms | Allocations: 87422)
+Completed 200 OK in 1998ms (Views: 1993.8ms | ActiveRecord: 0.0ms | Allocations: 88342)
+
+
+Started GET "/" for ::1 at 2024-01-07 21:46:26 -0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 10)
+  Rendered layout layouts/application.html.erb (Duration: 537.1ms | Allocations: 13383)
+Completed 200 OK in 558ms (Views: 548.2ms | ActiveRecord: 0.0ms | Allocations: 13905)
+
+
