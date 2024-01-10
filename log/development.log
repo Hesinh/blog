@@ -691,3 +691,21 @@ puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
 puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
 puma (5.6.7) lib/puma/server.rb:443:in `process_client'
 puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/articles/new" for ::1 at 2024-01-09 23:17:46 -0300
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 986.8ms | Allocations: 2590)
+  Rendered layout layouts/application.html.erb (Duration: 1195.4ms | Allocations: 15852)
+Completed 200 OK in 1291ms (Views: 1206.7ms | ActiveRecord: 18.6ms | Allocations: 18530)
+
+
+Started GET "/articles/new" for ::1 at 2024-01-09 23:17:56 -0300
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 21.6ms | Allocations: 908)
+  Rendered layout layouts/application.html.erb (Duration: 58.3ms | Allocations: 3013)
+Completed 200 OK in 76ms (Views: 70.3ms | ActiveRecord: 0.0ms | Allocations: 3283)
+
+
