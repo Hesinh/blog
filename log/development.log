@@ -709,3 +709,35 @@ Processing by ArticlesController#new as HTML
 Completed 200 OK in 76ms (Views: 70.3ms | ActiveRecord: 0.0ms | Allocations: 3283)
 
 
+Started GET "/" for ::1 at 2024-01-10 21:51:32 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (15.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 140.3ms | Allocations: 5571)
+  Rendered layout layouts/application.html.erb (Duration: 1252.5ms | Allocations: 38682)
+Completed 200 OK in 1605ms (Views: 1281.4ms | ActiveRecord: 21.8ms | Allocations: 43449)
+
+
+Started GET "/articles/new" for ::1 at 2024-01-10 21:51:39 -0300
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 84.5ms | Allocations: 2258)
+  Rendered layout layouts/application.html.erb (Duration: 105.7ms | Allocations: 4364)
+Completed 200 OK in 112ms (Views: 108.4ms | ActiveRecord: 0.0ms | Allocations: 4733)
+
+
+Started GET "/" for ::1 at 2024-01-10 21:52:50 -0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 16.4ms | Allocations: 861)
+  Rendered layout layouts/application.html.erb (Duration: 63.0ms | Allocations: 3412)
+Completed 200 OK in 82ms (Views: 74.8ms | ActiveRecord: 0.7ms | Allocations: 4241)
+
+
