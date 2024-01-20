@@ -1284,3 +1284,96 @@ Processing by ArticlesController#show as TURBO_STREAM
 Completed 200 OK in 850ms (Views: 804.9ms | ActiveRecord: 0.9ms | Allocations: 4155)
 
 
+Started GET "/articles/3" for ::1 at 2024-01-19 22:56:52 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 3]]
+  ↳ app/views/articles/show.html.erb:14
+  Rendered articles/show.html.erb within layouts/application (Duration: 254.3ms | Allocations: 3138)
+  Rendered layout layouts/application.html.erb (Duration: 342.6ms | Allocations: 5535)
+Completed 200 OK in 423ms (Views: 395.8ms | ActiveRecord: 6.3ms | Allocations: 6982)
+
+
+Started GET "/articles/3" for ::1 at 2024-01-19 23:05:06 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (1.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 3]]
+  ↳ app/views/articles/show.html.erb:14
+  Rendered articles/show.html.erb within layouts/application (Duration: 1094.8ms | Allocations: 5457)
+  Rendered layout layouts/application.html.erb (Duration: 1103.5ms | Allocations: 5545)
+Completed 500 Internal Server Error in 1380ms (ActiveRecord: 35.1ms | Allocations: 6989)
+
+
+  
+ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/aqua-azabache/basement/working/practice-r/blog/app/views"
+  * "/home/aqua-azabache/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/home/aqua-azabache/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.0.8/app/views"
+  * "/home/aqua-azabache/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.0.8/app/views"
+):
+    11: </ul>
+    12: 
+    13: <h2>Comments</h2>
+    14: <%= render @article.comments %>
+    15: 
+    16: <h2>Add a comment!</h2>
+    17: <%= form_with model: [ @article, @article.comments.build ] do 
+  
+app/views/articles/show.html.erb:14
+Started GET "/articles/3" for ::1 at 2024-01-19 23:06:34 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 3]]
+  ↳ app/views/articles/show.html.erb:14
+  Rendered articles/show.html.erb within layouts/application (Duration: 218.1ms | Allocations: 2284)
+  Rendered layout layouts/application.html.erb (Duration: 221.7ms | Allocations: 2372)
+Completed 500 Internal Server Error in 266ms (ActiveRecord: 1.8ms | Allocations: 3653)
+
+
+  
+ActionView::Template::Error (Missing partial comments/_comment with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/aqua-azabache/basement/working/practice-r/blog/app/views"
+  * "/home/aqua-azabache/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views"
+  * "/home/aqua-azabache/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.0.8/app/views"
+  * "/home/aqua-azabache/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.0.8/app/views"
+):
+    11: </ul>
+    12: 
+    13: <h2>Comments</h2>
+    14: <%= render @article.comments %>
+    15: 
+    16: <h2>Add a comment!</h2>
+    17: <%= form_with model: [ @article, @article.comments.build ] do 
+  
+app/views/articles/show.html.erb:14
+Started GET "/articles/3" for ::1 at 2024-01-19 23:07:46 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 3]]
+  ↳ app/views/articles/show.html.erb:14
+  Rendered collection of comments/_comment.html.erb [1 times] (Duration: 19.7ms | Allocations: 259)
+  Rendered articles/show.html.erb within layouts/application (Duration: 84.8ms | Allocations: 2641)
+  Rendered layout layouts/application.html.erb (Duration: 161.3ms | Allocations: 5041)
+Completed 200 OK in 208ms (Views: 181.4ms | ActiveRecord: 1.5ms | Allocations: 6345)
+
+
