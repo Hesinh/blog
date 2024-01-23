@@ -2057,3 +2057,5 @@ Processing by ArticlesController#new as HTML
 Completed 200 OK in 58ms (Views: 54.9ms | ActiveRecord: 0.0ms | Allocations: 3395)
 
 
+  [1m[36mArticle Update All (273.0ms)[0m  [1m[33mUPDATE "articles" SET "status" = ?[0m  [["status", "public"]]
+  [1m[36mComment Update All (259.6ms)[0m  [1m[33mUPDATE "comments" SET "status" = ?[0m  [["status", "public"]]
